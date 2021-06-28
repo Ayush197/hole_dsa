@@ -1,0 +1,38 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class q14
+{
+    public static void main(String[] args) {
+        Scanner au=new Scanner(System.in);
+        System.out.println("Enter the size  of array and sum k");
+        int n=au.nextInt();
+        int sum=au.nextInt();
+
+        int x[]=new int[n];
+
+        for(int i=0;i<n;i++)
+        x[i]=au.nextInt();
+
+        Arrays.sort(x);
+        for(int i=0;i<n-1;i++)
+        for(int j=i+1;j<n-2;j++)
+        {
+            int p=j+1;
+            while(p<n)
+            {
+            if(x[i]+x[j]+x[p]<sum)
+            System.out.println(x[i]+","+x[j]+","+x[p]);
+            
+            p++;
+            }
+            
+        
+
+        }
+        au.close();
+    }
+
+}
+    
+
