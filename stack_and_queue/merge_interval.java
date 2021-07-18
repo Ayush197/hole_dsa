@@ -52,7 +52,7 @@ public class merge_interval {
         
         merge_interval ob=new merge_interval();
 
-        interval arr[]={
+        interval ar[]={
 
         new interval(6,8),
         new interval(1,9),
