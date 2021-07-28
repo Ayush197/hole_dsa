@@ -7,7 +7,7 @@ public class q28
         node(int data)
         {
             this.data=data;
-            left=right;
+            left=right=null;
         }
 
     }
