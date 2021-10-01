@@ -1,14 +1,14 @@
+import java.util.ArrayList;
 import java.util.Queue;
-import java.util.Vector;
 
 public class form 
 {
-    static void addedge(int x,int y, ArrayLIst<ArrayList<Integer>>Integer>> adj)
+    static void addedge(int x,int y, ArrayList<ArrayList<Integer>> adj)
     {
         adj.get(x).add(y);
         adj.get(y).add(x);
     }
-    static void dfs(ArrayLIst<ArrayList<Integer>>Integer>> vec, int source,boolean check[])
+    static void dfs(ArrayList<ArrayList<Integer>> vec, int source,boolean check[])
     {
         check[source]=true;
         System.out.println(source);
@@ -19,7 +19,7 @@ public class form
         }
 
     }
-    static void bfs(ArrayLIst<ArrayList<Integer>>Integer>> vec,Queue<Integer> q,boolean check[])
+    static void bfs(ArrayList<ArrayList<Integer>> vec,Queue<Integer> q,boolean check[])
     {
         if(q.isEmpty())
         return;
